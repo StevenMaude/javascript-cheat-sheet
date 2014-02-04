@@ -5,7 +5,9 @@ Quick Javascript guide; notes that I've taken from Codecademy and Stack Overflow
 
 Data types:
 Primary (primitive): numbers, strings, booleans (true, false)
+
 Composites: objects, arrays
+
 Special: null, undefined
 
 # Formatting
