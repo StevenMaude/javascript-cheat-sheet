@@ -32,10 +32,12 @@ Print something to console:
 
 # Comparison
 `===` strict equal to
+
 `!==` strict not equal to
 
 # Strings
 Length of string: `"string".length;`
+
 Substrings: `"string".substring(x, y);`
 
 # Variables
