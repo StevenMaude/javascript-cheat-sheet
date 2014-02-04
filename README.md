@@ -18,10 +18,10 @@ Comments: `//`
 Single quotes, double equivalent.
 
 # Make things appear in windows or log
-Make box appear containing string:
+Make box appear containing value:
 `alert(value);`
 
-Make confirmation box appear containing string:
+Make confirmation box appear containing value:
 `confirm(value);`
 
 Prompt user for input:
