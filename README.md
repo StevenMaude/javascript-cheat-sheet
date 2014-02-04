@@ -1,10 +1,10 @@
 javascript_cheat_sheet
 ======================
 
-Quick Javascript guide; notes that I've taken from Codecademy and Stack Overflow.
+Quick Javascript guide; notes that I've taken primarily from working through Codecademy's JavaScript tutorial, and from Stack Overflow.
 
 Data types:
-Primary (primitive): numbers, strings, booleans (true, false)
+Primary (primitive): numbers, strings, Booleans (true, false)
 
 Composites: objects, arrays
 
@@ -34,6 +34,12 @@ Print something to console:
 `===` strict equal to
 
 `!==` strict not equal to
+
+`&&` AND
+
+So, to check `variable` is in the (inclusive) range of value1 and value2:
+
+    if (value1 <= variable && variable <= value2) {...
 
 # Strings
 Length of string: `"string".length;`
@@ -79,3 +85,8 @@ Often used is an anonymous function with a variable:
     };
 
 This is defined at *runtime* so can only be called after this line is executed.
+
+# Math(s)
+Choose a floating point number between 0 and 1: 
+    
+	Math.random();
