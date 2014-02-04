@@ -3,12 +3,12 @@ javascript_cheat_sheet
 
 Quick Javascript guide; notes that I've taken primarily from working through Codecademy's JavaScript tutorial, and from Stack Overflow.
 
-Data types:
-Primary (primitive): numbers, strings, Booleans (true, false)
+# Data types
+**Primary (primitive)**: numbers, strings, Booleans (true, false)
 
-Composites: objects, arrays
+**Composites**: objects, arrays
 
-Special: null, undefined
+**Special**: null, undefined
 
 # Formatting
 End statements with semicolon.
