@@ -10,6 +10,15 @@ Quick Javascript guide; notes that I've taken primarily from working through Cod
 
 **Special**: null, undefined
 
+# Arrays
+Store lists of data (can be different data types); ordered
+
+    var someArray = [item1, item2, item3];
+	
+Access elements, e.g.
+
+    someArray[0] // first element
+
 # Formatting
 End statements with semicolon.
 
@@ -69,6 +78,20 @@ Inside a function; local, only accessible within function
         statements
     }
 
+# For loop
+
+    for (var i=1; i < 10; i++) {
+        statements
+    }
+
+Can iterate over arrays too:
+
+Set the condition to be the length of the array and access the current element of the array with e.g. `someArray[i]` e.g.
+
+    for (var i = 0; i < someArray.length; i++) {
+        console.log(someArray[i]);
+    }
+    
 # Functions
 Can declare a named function:
 
@@ -89,4 +112,13 @@ This is defined at *runtime* so can only be called after this line is executed.
 # Math(s)
 Choose a floating point number between 0 and 1: 
     
-	Math.random();
+    Math.random();
+	
+# Increment/decrement by 1 or n
+
+    i++ 
+    i--
+    i += n
+    i -= n
+
+	(not really recommend outside of for loops)
