@@ -72,17 +72,23 @@ Print something to console:
 
 # Comparison operators
 ## Relational operators
+
 `===` strict equal to
+
 `==` equal to
 
 `!==` strict not equal to
+
 `!=` not equal to
 
 [Strict comparisons do not coerce types; the types must be the same to be equal](http://stackoverflow.com/questions/359494/does-it-matter-which-equals-operator-vs-i-use-in-javascript-comparisons), e.g. converting `"100" === 100` is `false`, but `"100" == 100` is `true`.
 
 ## Logical operators
+
 `&&` AND
+
 `||` OR
+
 `!` NOT
 
 So, to check `variable` is in the (inclusive) range of value1 and value2:
