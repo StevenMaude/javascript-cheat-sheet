@@ -129,6 +129,25 @@ Inside a function; local, only accessible within function
 
 ## switch
 
+Alternative to if...else:
+    
+    switch(expression)
+        case label1:
+            statements
+            [break;]
+        case label2:
+            statements
+            [break;]
+        default:
+            statements
+            [break;]
+
+Checks if any of the cases in the switch match the case labels and execute the code in them. When a break statement is reached, execution continues after the switch statement.
+
+`break`ing is optional. However, if a `break` is not included for a `case`, the statements in `default` will execute too.
+
+The break under default is unnecessary as you have already reached the end of the switch statement at that point, [but still worth including](http://stackoverflow.com/questions/2729813/switch-statements-do-you-need-the-last-break-javascript-mainly).
+
 
 # Loops
 
@@ -159,27 +178,6 @@ Set the condition to be the length of the array and access the current element o
     } while (condition);
 
 Executes the loop body *once*, regardless of the condition state. checking condition on subsequent iterations.
-
-## switch
-
-Alternative to if...else:
-    
-    switch(expression)
-        case label1:
-            statements
-            [break;]
-        case label2:
-            statements
-            [break;]
-        default:
-            statements
-            [break;]
-
-Checks if any of the cases in the switch match the case labels and execute the code in them. When a break statement is reached, execution continues after the switch statement.
-
-`break`ing is optional. However, if a `break` is not included for a `case`, the statements in `default` will execute too.
-
-The break under default is unnecessary as you have already reached the end of the switch statement at that point, [but still worth including](http://stackoverflow.com/questions/2729813/switch-statements-do-you-need-the-last-break-javascript-mainly).
 
 # Functions
 Can declare a named function:
