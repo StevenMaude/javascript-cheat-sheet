@@ -81,7 +81,7 @@ Print something to console:
 
 `!=` not equal to
 
-[Strict comparisons do not coerce types; the types must be the same to be equal](http://stackoverflow.com/questions/359494/does-it-matter-which-equals-operator-vs-i-use-in-javascript-comparisons), e.g. converting `"100" === 100` is `false`, but `"100" == 100` is `true`.
+[Strict comparisons do not coerce types; the types must be the same to be equal](http://stackoverflow.com/questions/359494/does-it-matter-which-equals-operator-vs-i-use-in-javascript-comparisons), e.g. `"100" === 100` is `false`, but `"100" == 100` is `true`.
 
 ## Logical operators
 
