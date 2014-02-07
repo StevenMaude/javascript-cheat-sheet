@@ -121,4 +121,4 @@ Choose a floating point number between 0 and 1:
     i += n
     i -= n
 
-	(not really recommend outside of for loops)
+(not really recommended outside of for loops)
