@@ -1,7 +1,9 @@
 javascript_cheat_sheet
 ======================
 
-Quick Javascript guide; notes that I've taken primarily from working through Codecademy's JavaScript tutorial, and from Stack Overflow.
+Quick JavaScript guide; notes that I've taken primarily from working through Codecademy's JavaScript tutorial, and from Stack Overflow.
+
+[Some differences](https://blog.glyphobet.net/essay/2557) between Python and JavaScript.
 
 # Data types
 **Primary (primitive)**: numbers, strings, Booleans (true, false)
@@ -9,6 +11,11 @@ Quick Javascript guide; notes that I've taken primarily from working through Cod
 **Composites**: objects, arrays
 
 **Special**: null, undefined
+
+# Numbers
+Check whether a value is **not** a number: `isNaN(value)`
+
+This coerces type: `isNaN("10")` is true.
 
 # Strings
 Length of string: `"string".length;`
@@ -153,6 +160,27 @@ Set the condition to be the length of the array and access the current element o
 
 Executes the loop body *once*, regardless of the condition state. checking condition on subsequent iterations.
 
+## switch
+
+Alternative to if...else:
+    
+    switch(expression)
+        case label1:
+            statements
+            [break;]
+        case label2:
+            statements
+            [break;]
+        default:
+            statements
+            [break;]
+
+Checks if any of the cases in the switch match the case labels and execute the code in them. When a break statement is reached, execution continues after the switch statement.
+
+`break`ing is optional. However, if a `break` is not included for a `case`, the statements in `default` will execute too.
+
+The break under default is unnecessary as you have already reached the end of the switch statement at that point, [but still worth including](http://stackoverflow.com/questions/2729813/switch-statements-do-you-need-the-last-break-javascript-mainly).
+
 # Functions
 Can declare a named function:
 
@@ -173,8 +201,18 @@ This is defined at *runtime* so can only be called after this line is executed.
 # Math(s)
 Choose a floating point number between 0 and 1: 
     
-    Math.random();
-	
+    math.random();
+
+Generate random integers:
+
+Unlike Python, there's no randint() function :(
+
+    var randomInteger = Math.floor(Math.random() * x + y)
+
+Specifying integers `x` and `y` will produce a random integer between y and y+x-1
+
+[Why Math.floor and not Math.round?](http://stackoverflow.com/questions/7377735/random-numbers-and-floor-vs-round-function)
+
 # Increment/decrement by 1 or n
 
     i++ 
