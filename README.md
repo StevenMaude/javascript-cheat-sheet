@@ -203,7 +203,7 @@ Choose a floating point number between 0 and 1:
 
 Generate random integers:
 
-Unlike Python, there's no randint() function :(
+Unlike Python, there's no randint() function :( So, the typical way to generate a random integer is by generating a random float and rounding to an integer: 
 
     var randomInteger = Math.floor(Math.random() * x + y)
 
