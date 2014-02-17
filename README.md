@@ -135,7 +135,7 @@ Inside a function; local, only accessible within function
 
 Alternative to if...else:
     
-    switch(expression)
+    switch(expression) {
         case label1:
             statements
             [break;]
@@ -145,7 +145,8 @@ Alternative to if...else:
         default:
             statements
             [break;]
-
+    }
+    
 Checks if any of the cases in the switch match the case labels and execute the code in them. When a break statement is reached, execution continues after the switch statement.
 
 `break`ing is optional. However, if a `break` is not included for a `case`, the statements in `default` will execute too.
